@@ -1,0 +1,28 @@
+{
+  "My_Degrees": [
+    {
+      "degree": {
+        "school": "Thomas Edison State University",
+        "program": "History",
+        "type": "BA",
+        "Year_Conferred": 2015
+      }
+    },
+    {
+      "degree": {
+        "school": "Suffolk University",
+        "program": "Business Administration",
+        "type": "MBA",
+        "Year_Conferred": 2018
+      }
+    },
+    {
+      "degree": {
+        "school": "Thomas Edison State University",
+        "program": "History",
+        "type": "BA",
+        "Year_Conferred": 2015
+      }
+    }
+  ]
+}
