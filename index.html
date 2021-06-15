@@ -1,0 +1,47 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Demo</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>A Brief Introduction to Async JavaScript</h1>
+    </header>
+    <main>
+        <h3>I was curious if there would be any difference in speed between AJAX, a promise or the fetch API.</h3>
+        <p>We will be fetching a simple JSON string from the website:
+            <a href="jsonbin.io"> jsonbin.io</a>
+        </p>
+    </main>
+    <div class="ajax">
+        <article class="content">
+            <p class="test_text">Test with Ajax Function</p>
+            <button class="ajax_button">Get Data</button>
+        </article>
+        <div id="data">
+        </div>
+    </div>
+    <div class="fetch" id="fetch">
+        <article class="content">
+            <p class="test_text">Test with Fetch API</p>
+            <button class="fetch_button">Get Data</button>
+        </article>
+    </div>
+    <div class="ajax_list hide ajax_data">
+        <ol id="ajax_list">
+        </ol>
+    </div>
+    <div class="fetch_list hide fetch_data">
+        <ol id="fetch_list">
+        </ol>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
