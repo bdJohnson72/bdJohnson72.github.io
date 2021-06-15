@@ -1,0 +1,153 @@
+:root{
+    --main_white: rgba(3, 29, 71, 0.6);
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    line-height: 15px;
+    border: 0;
+    margin: 0;
+}
+body{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+ol{
+    list-style: upper-roman;
+}
+
+body a:link{
+    color: blue;
+}
+body a:hover{
+    cursor: pointer;
+}
+body a:visited{
+    color: purple;
+
+
+}
+
+button{
+    margin: 10px 0 0 0;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    background: whitesmoke;
+    transition-duration: 0.1s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "header1 header1 header1 header1"
+                          "header2 header2 header2 header2"
+                          "main1 main1 main2 main2"
+                          "main1 main1 main2 main2"
+                          "ajax ajax fetch fetch";
+    grid-gap: 5px;
+    background-image: linear-gradient(to right bottom,#fdfdfd, #edcbcb);
+    padding: 1rem;
+}
+
+header{
+    height: 8rem;
+    margin: 1rem;
+    justify-content: center;
+    grid-area: header1;
+    background: var(--main_white);
+}
+
+header h1{
+    margin: 3rem 0 0 0;
+    display: block;
+    text-align: center;
+}
+
+main{
+    grid-area: header2;
+    padding: 10px;
+    margin: 0 1rem;
+    background: var(--main_white);
+}
+
+main h3{
+    margin: 0 0 0 .5rem;
+}
+
+main p{
+    margin: 1rem .5rem
+}
+
+
+
+.ajax{
+    grid-area: main1;
+    text-align: center;
+    margin: 1rem;
+    background: var(--main_white);
+    padding: .5rem;
+    min-height: 7rem;
+}
+
+.fetch{
+    grid-area: main2;
+    text-align: center;
+    margin: 1rem;
+    background: var(--main_white);
+    padding: .5rem;
+    min-height: 7rem;
+}
+
+.border_bottom{
+    border-bottom: 2px outset darkgoldenrod;
+}
+
+.fetch_data{
+    grid-area: fetch;
+    margin: 1rem;
+    padding: .5rem;
+    background: var(--main_white);
+}
+
+.fetch_data ol{
+
+    list-style: upper-roman;
+}
+
+.ajax_data{
+    background: var(--main_white);
+    grid-area: ajax;
+    margin: 1rem;
+    padding: 5px;
+}
+
+.test_text{
+    font-weight: 600;
+}
+
+.hide{
+    display: none;
+}
+
+.fade-in-text {
+    color: black;
+    animation: fadeIn linear .5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+li{
+    border-bottom: 1px dashed black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
